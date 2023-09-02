@@ -1,0 +1,110 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: hsl(234, 29%, 20%);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+.container .under-container {
+  height: 100%;
+}
+.container .under-container .side-img img {
+  width: 100%;
+}
+.container .under-container .updated-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5rem 1.4rem 0 1.4rem;
+  line-height: 1.3rem;
+}
+.container .under-container .updated-content h1 {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 1.2rem;
+}
+.container .under-container .updated-content p {
+  font-size: 14px;
+}
+.container .under-container .updated-content .join {
+  padding-bottom: 1.5rem;
+}
+.container .under-container .updated-content .check {
+  display: flex;
+  align-items: flex-start;
+}
+.container .under-container .updated-content .check p {
+  padding: 0 0 1rem 0.8rem;
+}
+.container .under-container .updated-content label {
+  font-size: 10px;
+  font-weight: 700;
+}
+.container .under-container .updated-content .email {
+  padding: 1rem;
+  margin-bottom: 1.3rem;
+  border-radius: 7px;
+  border-style: none;
+  border: 1px solid hsl(231, 7%, 60%);
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.container .under-container .updated-content .email.active {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.container .under-container .updated-content .subscribe {
+  background-color: hsl(234, 29%, 20%);
+  border-style: none;
+  padding: 1rem;
+  border-radius: 7px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+.container .under-container .updated-content .subscribe:hover {
+  background: hsl(4, 100%, 67%);
+}
+.container .under-container .updated-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.container .under-container .updated-content .labels {
+  display: flex;
+  justify-content: space-between;
+}
+.container .under-container .updated-content .labels .invalid {
+  display: none;
+  position: relative;
+  color: hsl(4, 100%, 67%);
+}
+.container .under-container .updated-content .labels .invalid.active {
+  display: flex;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 500px;
+  }
+}/*# sourceMappingURL=style.css.map */
